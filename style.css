@@ -1,0 +1,54 @@
+body{
+    text-align: center;
+    font-family:"Comic Sans MS", "Comic Sans", Arial;
+    background-color:#AAFF00 ;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+ul li{
+        display: inline;
+        padding:10px;
+        border: solid 1px #35322B;
+}
+
+a{
+    color:#35322B
+}
+
+a:hover{
+    color:purple
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    display: inline-block;
+    margin:30px;
+  }
+
+.lost{
+    display:none
+}
+
+h3{
+    font-size: 50px;
+}
+
+button{
+    border-radius: 10px;
+    background-color:#35322B;
+    color:#AAFF00;
+    padding:10px
+}
+
+footer{
+    margin:10px
+}
