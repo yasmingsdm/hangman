@@ -1,11 +1,14 @@
 let word = 'APPLE'
+//Split the word into letters:
+let lettersOfTheWord = word.split('')
 
 // Hide the word: 
-document.getElementById('word').innerHTML = word
+document.getElementById('word').innerHTML = lettersOfTheWord
 document.getElementById('word').style.display = 'none'
 
 // Check how many letters and write the _ :
-let underscore = word.length
+
+let underscore = lettersOfTheWord.length
 
 switch (underscore){
     case '1':
@@ -39,14 +42,14 @@ function tryLetter(){
     //Check if the letter is on the word:
     let error = 0
     
-    for (let i=0; i<word.length; i++){
-        if (word[i] === LETTER){
+    for (let i=0; i<lettersOfTheWord.length; i++){
+        if (lettersOfTheWord[i] === LETTER){
             document.getElementById('word').style.display = 'block'
         } else {
             error++
         }
     }
-//console.log(error)
+console.log(error)
     // Mark errors:
 
     if (error == 1){
@@ -63,4 +66,10 @@ function tryLetter(){
         document.getElementById('lostImg').style.display = 'block'
         document.getElementById('lostP').style.display= 'block'
     }
+}
+
+// Play Again:
+
+document.getElementById('playAgain').onclick = ()=>{
+    location.reload()
 }
