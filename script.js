@@ -6,34 +6,17 @@ let lettersOfTheWord = word.split('')
 document.getElementById('word').innerHTML = lettersOfTheWord
 document.getElementById('word').style.display = 'none'
 
+let underscore = document.getElementById('underscore')
+const start = ()=>{
 // Check how many letters and write the _ :
 
-let underscore = lettersOfTheWord.length
-
-switch (underscore){
-    case '1':
-        document.getElementById('underscore').innerHTML = '_';
-        break;
-    case '2':
-        document.getElementById('underscore').innerHTML = '_ _';
-        break;
-    case '3':
-        document.getElementById('underscore').innerHTML = '_ _ _';
-        break;
-    case '4':
-        document.getElementById('underscore').innerHTML = '_ _ _ _';
-        break;
-    case '5':
-        document.getElementById('underscore').innerHTML = '_ _ _ _ _';
-        break;
-    case '6':
-        document.getElementById('underscore').innerHTML = '_ _ _ _ _ _';
-        break;
-    default:
-    alert('This word is too big');
-    break;
+for (let i=0; i<lettersOfTheWord.length; i++){
+    
+    console.log('yes')
+     underscore.innerHTML += '<div class="underscore" '+ i '">_</div>';
+    
 }
-
+}
 function tryLetter(){
     //Save and transform to upper case the letter the user wrote:
     let letter = document.getElementById('letter').value
