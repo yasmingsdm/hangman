@@ -11,7 +11,7 @@ const start = ()=>{
 // Check how many letters and write the _ :
 
 for (let i=0; i<lettersOfTheWord.length; i++){
-     underscore.innerHTML += '<div class="underscore' + i + '">   _   </div>';
+     underscore.innerHTML += '<div id="underscore' + i + '">   _   </div>';
 }
 
 }
