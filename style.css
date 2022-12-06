@@ -38,6 +38,10 @@ a:hover{
     display:none
 }
 
+.underscore{
+    display:inline-flex;
+}
+
 h3{
     font-size: 50px;
 }

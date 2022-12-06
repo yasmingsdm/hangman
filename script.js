@@ -11,11 +11,9 @@ const start = ()=>{
 // Check how many letters and write the _ :
 
 for (let i=0; i<lettersOfTheWord.length; i++){
-    
-    console.log('yes')
-     underscore.innerHTML += '<div class="underscore" '+ i '">_</div>';
-    
+     underscore.innerHTML += '<div class="underscore' + i + '">   _   </div>';
 }
+
 }
 function tryLetter(){
     //Save and transform to upper case the letter the user wrote:
@@ -27,7 +25,7 @@ function tryLetter(){
     
     for (let i=0; i<lettersOfTheWord.length; i++){
         if (lettersOfTheWord[i] === LETTER){
-            document.getElementById('word').style.display = 'block'
+            document.getElementById('underscore-i').style.display = 'block'
         } else {
             error++
         }
