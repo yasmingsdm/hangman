@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Hangman</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+              <a href="#howToPlay"><li> How to Play</li></a>
+              <a href="#play"><li>Let's Play</li></a>
+            </ul>
+        </nav>
+        <header>
+            <h1>Hangman</h1>
+            <div class="mistakes">
+                <span class="circle" id="circle1"></span>
+                <span class="circle" id="circle2"></span>
+                <span class="circle" id="circle3"></span>
+                <span class="circle" id="circle4"></span>
+                <span class="circle" id="circle5"></span>
+                <img src="https://m.media-amazon.com/images/I/41Kt59CjXmL.png" alt="hangman" class="lost" id="lostImg"/>
+                <p class="lost" id="lostP">You Lost!</p>
+            </div>
+        </header>
+        <section class ="howToPlay" id="howToPlay">
+                <p>Each line has one letter of the secret word. You have to discover the secret word.<br>Choose a letter and type it, if the letter is in the secret word, it will appear on the right place. If not, you made a mistake.<br>You can make only 6 mistakes.</p>
+        </section>  
+        <section class="play" id="play">
+            <button onclick="start()">Start</button>
+            <h3 id="word"></h3>
+            <div class="underscore" id="underscore"></div>
+            <label for="letter">Choose a letter:</label>
+            <input type="text" name="letter" id="letter" pattern="[a-z A-Z]" maxlength="1">
+            <button id="tryLetter" class="tryLetter" type="submit" onclick=tryLetter()>Try the letter</button>
+        </section>
+        <button id="playAgain" class="playAgain">Play Again</button>
+        <footer>Project by<a href="https://github.com/yasmingsdm"> Yasmin Dal Medico</a></footer>
+        <script src="./script.js"></script>
+    </body>
