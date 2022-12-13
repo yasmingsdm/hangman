@@ -11,7 +11,7 @@ const start = ()=>{
 // Check how many letters and write the _ :
 
 for (let i=0; i<lettersOfTheWord.length; i++){
-     underscore.innerHTML += '<div id="underscore' + i + '">   _   </div>';
+     underscore.innerHTML += '<div class="espaco" id="underscore' + i + '">   _   </div>';
 }
 
 }
@@ -25,7 +25,8 @@ function tryLetter(){
     
     for (let i=0; i<lettersOfTheWord.length; i++){
         if (lettersOfTheWord[i] === LETTER){
-            document.getElementById('underscore-i').style.display = 'block'
+            let id= 'underscore' + i
+            document.getElementById('word').style.display = 'block'
         } else {
             error++
         }
